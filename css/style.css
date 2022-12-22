@@ -1,0 +1,272 @@
+/* リセットCSSを読み込んで作成してください。
+フォント：Google Fontsの「Shippori Mincho」「Amatic SC」を使用。
+  font-family: 'Shippori Mincho',serif;
+  font-family: 'Amatic SC',cursive;
+全体最大幅：1300px
+コンテンツ幅：1000px
+ヘッダーの高さ：70px
+ロゴフォント：Amatic SC
+ロゴサイズ：40px
+ファーストビュー 文字サイズ：40px,64px
+使用カラーコード：#55bbbb,#FF4384
+セクション毎の余白：60px */
+
+body{
+  max-width: 1300px;
+  width: 1000px;
+  font-family: 'Shippori Mincho', serif;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header{
+  height: 70px;
+  display: flex;
+  justify-content: right;
+}
+
+.header__logo{
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #55bbbb;
+  margin: 10px;
+}
+
+/* firstview */
+
+.firstview{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.firstview__content{
+  margin-left: 20px;
+  text-align: left;
+  position: absolute;
+  z-index: +1;
+}
+
+.firstview__title{
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.firstview__title--blue{
+  color: #55bbbb;
+  font-size: 64px;
+}
+
+.firstview__title--black{
+  font-size: 64px;
+}
+
+.firstview__price{
+  display: flex;
+  justify-content: left;
+  margin: 30px 0;
+}
+
+.firstview__price-now{
+  background-color: #FF4384;
+  color: #FFFFFF;
+  padding: 30px 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.firstview__price-left{
+  margin: auto 5px;
+}
+
+.firstview__price-text{
+  color: #55bbbb;
+  font-size: 13px;
+}
+
+.firstview__price-price{
+  color: #FF4384;
+  font-size: 20px;
+}
+
+.firstview__price--large{
+  font-size: 30px;
+}
+
+.firstview__campaign-text{
+  display: inline-block;
+  background-color: #FF4384;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.firstview__img-container{
+  width: 100%;
+  height: auto;
+}
+
+.firstview__img {
+  width: 100%;
+  height: auto;
+}
+
+/* problem */
+
+.problem__header{
+  text-align: center;
+}
+
+.problem__title{
+  color: #FFFFFF;
+  background-color: #55bbbb;
+  line-height: 80px;
+  position: relative;
+}
+
+.problem__title::after{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  margin-left: -30px;
+  border: 30px solid transparent;
+  border-top: 20px solid #55bbbb;
+}
+
+.problem__title--large{
+  font-size: 30px;
+}
+
+.problem__content{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 20px auto 0;
+}
+
+.problem__img-container{
+  width: 150px;
+  margin-right: 40px;
+}
+
+.problem__img{
+  width: 100%;
+}
+
+.problem__list-container{
+  margin: auto 0;
+  border: 1px solid #55bbbb;
+  border-radius: 20px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.problem__list{
+  position: relative;
+}
+
+.problem__list-item{
+  color: #55bbbb;
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 1px solid #55bbbb;
+  line-height: 30px;
+  list-style: url(../img/check.svg);
+}
+
+.problem__list-item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+/* .problem__list-item::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  background: url(../img/check.svg)no-repeat;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+} */
+
+/* solution */
+
+
+.solution__title{
+  background-color: #55bbbb;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 30px 0;
+  text-align: center;
+  line-height: 45px;
+}
+
+.solution__title--logo{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+.solution__title--large{
+  font-size: 30px;
+}
+
+.solution__title--pink{
+  font-size: 30px;
+  color: #FF4384;
+}
+
+.solution__point{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.solution__point-item{
+  border: #55bbbb 1px solid;
+  width: 250px;
+  position: relative;
+  padding: 15px;
+}
+.solution__point-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.solution__point-number{
+  font-family: 'Amatic SC', cursive;
+  color: #55bbbb;
+  font-size: 20px;
+  position: absolute;
+  transform: translate(5px, -25px);
+  z-index: +1;
+  display: inline-block;
+  background-color: #FFFFFF;
+  padding: 0 5px;
+}
+
+.solution__point-title{
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.solution__point-title--pink{
+  color: #FF4384;
+}
+
+.solution__point-text{
+  font-size: 13px;
+  line-height: 20px;
+}
+
+footer{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+small{
+  font-size: 13px;
+}
